@@ -79,10 +79,10 @@ nav.solid .links{border-color:var(--line);background:rgba(255,255,255,.6)}
 .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;width:100%}
 .eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--magenta);font-weight:600;display:flex;align-items:center;gap:14px}
 .eyebrow::before{content:"";width:38px;height:1px;background:currentColor}
-.sig{display:block;width:min(520px,100%);height:auto;margin:14px 0 0 -8px;overflow:visible}
+.sig{display:block;width:min(437px,100%);height:auto;margin:14px 0 -30px -64px;overflow:visible}
 .sig text{font-family:var(--script);font-size:190px;fill:url(#inkgrad)}
-.sig{clip-path:inset(-30% 100% -30% -30%);animation:wipe 1.8s .35s cubic-bezier(.6,.05,.2,1) forwards}
-@keyframes wipe{to{clip-path:inset(-30% -30% -30% -30%)}}
+.sig{-webkit-clip-path:inset(0 100% 0 0);clip-path:inset(0 100% 0 0);animation:wipe 1.8s .35s cubic-bezier(.6,.05,.2,1) forwards}
+@keyframes wipe{to{-webkit-clip-path:inset(0 0 0 0);clip-path:inset(0 0 0 0)}}
 h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,5.4vw,74px);line-height:1.02;letter-spacing:-.01em}
 h1 em{font-style:italic;color:var(--violet)}
 .role{margin-top:22px;font-size:11.5px;letter-spacing:.17em;text-transform:uppercase;color:var(--ink-2);display:flex;flex-wrap:wrap;gap:10px 14px}
@@ -355,7 +355,8 @@ footer .mark{color:#fff;font-size:34px;text-transform:none;letter-spacing:0}
   .lt[data-lang="ru"] .lthumb{transform:translateX(30px)}
   .links{overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;border-color:var(--line);background:rgba(255,255,255,.7);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
   .links::-webkit-scrollbar{display:none}
-  .links a{font-size:11px;padding:8px 12px;white-space:nowrap;letter-spacing:.12em}
+  .links{margin-left:0;width:100%;justify-content:space-between;gap:0}
+  .links a{font-size:clamp(8.5px,2.55vw,10.5px);padding:8px clamp(4px,1.6vw,9px);white-space:nowrap;letter-spacing:.05em}
   nav.solid{padding:10px 0}
   .hero{padding-top:150px}
   .badge{left:-12px}
@@ -369,7 +370,7 @@ footer .mark{color:#fff;font-size:34px;text-transform:none;letter-spacing:0}
   .lb img{max-height:72vh}
   .hero .wash{right:-40vw;width:130vw;top:auto;bottom:-10vh;height:75vh}
   .scroll-hint{display:none}
-  .sig{width:78%;margin-left:46px}
+  .sig{width:66%;margin:10px 0 -16px 6px}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001s!important;animation-delay:0s!important;transition-duration:.001s!important}
@@ -418,7 +419,7 @@ footer .mark{color:#fff;font-size:34px;text-transform:none;letter-spacing:0}
   <div class="wrap hero-grid">
     <div>
       <div class="eyebrow">IELTS &amp; English Teacher</div>
-      <svg class="sig" viewBox="0 0 560 230" aria-label="Julie" role="img"><text x="10" y="178">Julie</text></svg>
+      <svg class="sig" viewBox="0 0 470 262" aria-label="Julie" role="img"><text x="70" y="178">Julie</text></svg>
       <h1>Gulsezim <em>Khalen</em></h1>
       <div class="role"><span>IELTS Teacher at TILU</span><span>MSc Cognitive Science</span></div>
       <p class="lede">I help students walk into the IELTS exam calm, prepared and confident — through structured lessons, my own materials and a flipped-classroom approach that turns class time into real practice.</p>

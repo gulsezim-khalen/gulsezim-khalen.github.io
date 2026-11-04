@@ -80,7 +80,7 @@ nav.solid .links{border-color:var(--line);background:rgba(255,255,255,.6)}
 .eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--magenta);font-weight:600;display:flex;align-items:center;gap:14px}
 .eyebrow::before{content:"";width:38px;height:1px;background:currentColor}
 .sig{display:block;width:min(437px,100%);height:auto;margin:14px 0 -30px -64px;overflow:visible}
-.sig text{font-family:var(--script);font-size:190px;fill:url(#inkgrad)}
+.sig text{font-family:var(--script);font-size:190px}
 h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,5.4vw,74px);line-height:1.02;letter-spacing:-.01em}
 h1 em{font-style:italic;color:var(--violet)}
 .role{margin-top:22px;font-size:11.5px;letter-spacing:.17em;text-transform:uppercase;color:var(--ink-2);display:flex;flex-wrap:wrap;gap:10px 14px}
@@ -385,7 +385,7 @@ footer .mark{color:#fff;font-size:34px;text-transform:none;letter-spacing:0}
       <feDisplacementMap in="SourceGraphic" in2="n" scale="120" xChannelSelector="R" yChannelSelector="G" result="d"/>
       <feGaussianBlur in="d" stdDeviation="3"/>
     </filter>
-    <linearGradient id="inkgrad" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="inkgrad" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="440" y2="262">
       <stop offset="0" stop-color="#5b2384"/>
       <stop offset=".6" stop-color="#9b2f97"/>
       <stop offset="1" stop-color="#d45bb0"/>
@@ -417,7 +417,7 @@ footer .mark{color:#fff;font-size:34px;text-transform:none;letter-spacing:0}
   <div class="wrap hero-grid">
     <div>
       <div class="eyebrow">IELTS &amp; English Teacher</div>
-      <svg class="sig" viewBox="0 0 470 262" aria-label="Julie" role="img"><defs><clipPath id="sigclip" clipPathUnits="userSpaceOnUse"><rect x="0" y="0" width="0" height="262"><animate attributeName="width" from="0" to="470" begin="0.35s" dur="1.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.6 0.05 0.2 1"/></rect></clipPath></defs><text x="70" y="178" clip-path="url(#sigclip)">Julie</text></svg>
+      <svg class="sig" viewBox="0 0 470 262" aria-label="Julie" role="img"><defs><linearGradient id="siggrad" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="440" y2="262"><stop offset="0" stop-color="#5b2384"/><stop offset=".6" stop-color="#9b2f97"/><stop offset="1" stop-color="#d45bb0"/></linearGradient><clipPath id="sigclip" clipPathUnits="userSpaceOnUse"><rect x="0" y="0" width="0" height="262"><animate attributeName="width" from="0" to="470" begin="0.35s" dur="1.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.6 0.05 0.2 1"/></rect></clipPath></defs><text x="70" y="178" fill="url(#siggrad)" clip-path="url(#sigclip)">Julie</text></svg>
       <h1>Gulsezim <em>Khalen</em></h1>
       <div class="role"><span>IELTS Teacher at TILU</span><span>MSc Cognitive Science</span></div>
       <p class="lede">I help students walk into the IELTS exam calm, prepared and confident — through structured lessons, my own materials and a flipped-classroom approach that turns class time into real practice.</p>

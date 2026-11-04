@@ -223,7 +223,9 @@ section:not(.tint) .panel{background:var(--paper-2);box-shadow:none}
 
 /* languages */
 .langs{display:grid;grid-template-columns:200px 1fr;gap:40px}
-.lang-list{display:grid;gap:26px}
+.lang-list{display:grid;gap:22px}
+.lang-list.panel{padding:34px 40px;background:#fff;box-shadow:0 30px 60px -45px rgba(91,35,132,.35)}
+@media (max-width:760px){.lang-list.panel{padding:26px 20px}}
 .lang{display:grid;grid-template-columns:170px 1fr 70px;gap:26px;align-items:center}
 .lang .n{font-family:var(--serif);font-size:26px;font-weight:500}
 .lang .n small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500}
@@ -456,6 +458,15 @@ footer .mark{color:#fff;font-size:34px;text-transform:none;letter-spacing:0}
         <div class="glyph" aria-hidden="true">S</div>
       </div>
     </div></div>
+    <div class="block"><div class="sub r"><b>iii</b>Languages</div>
+      <div class="lang-list panel">
+        <div class="lang r"><div class="n">Kazakh<small>Native</small></div><div class="track"><i data-w="100"></i></div><div class="lv">C2</div></div>
+        <div class="lang r d1"><div class="n">Russian<small>Proficient</small></div><div class="track"><i data-w="100"></i></div><div class="lv">C2</div></div>
+        <div class="lang r d2"><div class="n">English<small>Advanced</small></div><div class="track"><i data-w="84"></i></div><div class="lv">C1</div></div>
+        <div class="lang r d3"><div class="n">French<small>Upper-Intermediate</small></div><div class="track"><i data-w="67"></i></div><div class="lv">B2</div></div>
+        <div class="lang r d4"><div class="n">Turkish<small>Intermediate</small></div><div class="track"><i data-w="50"></i></div><div class="lv">B1</div></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -572,27 +583,10 @@ footer .mark{color:#fff;font-size:34px;text-transform:none;letter-spacing:0}
   </div>
 </section>
 
-<!-- LANGUAGES -->
-<section id="languages" class="tint">
-  <div class="wrap">
-    <div class="head"><div class="num r">04 — Languages</div><h2 class="r d1">Five <em>languages</em></h2></div>
-    <div class="langs">
-      <div></div>
-      <div class="lang-list">
-        <div class="lang r"><div class="n">Kazakh<small>Native</small></div><div class="track"><i data-w="100"></i></div><div class="lv">C2</div></div>
-        <div class="lang r d1"><div class="n">Russian<small>Proficient</small></div><div class="track"><i data-w="100"></i></div><div class="lv">C2</div></div>
-        <div class="lang r d2"><div class="n">English<small>Advanced</small></div><div class="track"><i data-w="84"></i></div><div class="lv">C1</div></div>
-        <div class="lang r d3"><div class="n">French<small>Upper-Intermediate</small></div><div class="track"><i data-w="67"></i></div><div class="lv">B2</div></div>
-        <div class="lang r d4"><div class="n">Turkish<small>Intermediate</small></div><div class="track"><i data-w="50"></i></div><div class="lv">B1</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- STUDENTS -->
-<section id="students">
+<section id="students" class="tint">
   <div class="wrap">
-    <div class="head"><div class="num r">05 — Students</div><h2 class="r d1">Real <em>results</em></h2></div>
+    <div class="head"><div class="num r">04 — Students</div><h2 class="r d1">Real <em>results</em></h2></div>
     <div class="stu">
       <div></div>
       <div>
@@ -673,7 +667,7 @@ footer .mark{color:#fff;font-size:34px;text-transform:none;letter-spacing:0}
 <section class="contact" id="contact">
   <div class="wash" aria-hidden="true"><i></i><i></i><i></i></div>
   <div class="wrap">
-    <div class="eyebrow r">06 — Contact</div>
+    <div class="eyebrow r">05 — Contact</div>
     <h2 class="r d1">Ready for your <em>IELTS</em>? Let's talk.</h2>
     <div class="chan">
       <a href="mailto:gulsezimkhalen@gmail.com" class="r" data-copy="gulsezimkhalen@gmail.com"><small>Email</small><span>gulsezimkhalen@gmail.com</span><div class="copy-note">Copied</div></a>
